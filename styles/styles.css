@@ -19,12 +19,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .page-header {
   color: #000000;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .navigation-link{
@@ -39,11 +39,42 @@ body {
 }
 
 .main-index {
-  position: absolute;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
+}
+
+.main-index h2{
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.advantages-title-city h3{
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+}
+
+.reasons{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .main-text {
@@ -52,13 +83,48 @@ body {
   background-color: #ffffff;
 }
 
-.advantages {
+.advantages{
   font-size: 24px;
   line-height: 28px;
   text-align: center;
 }
 
 main h3 {
+  text-transform: uppercase;
+}
+
+.reserve {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.appointment-form {
+  text-align: center;
+}
+
+.services-description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.services-name {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -73,9 +139,10 @@ main h3 {
   line-height: 40px;
   font-weight: 400;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .hotels-card-title {
@@ -111,4 +178,23 @@ main h3 {
 
 .hotels-card-link {
   text-decoration: none;
+}
+
+.mailing-title{
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../images/background-mailing.jpg");
+}
+
+.mailing-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  font-style: normal;
+  text-align: center;
 }
