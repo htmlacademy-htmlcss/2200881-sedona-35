@@ -27,8 +27,7 @@ body {
   background: #ffffff;
 }
 
-.navigation-link{
-  font-family: "PT Sans";
+.navigation-link {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -45,8 +44,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.main-index h2{
-  font-family: "PT Sans";
+.main-index h2 {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
@@ -55,8 +53,7 @@ body {
   background-color: #ffffff;
 }
 
-.advantages-title-city h3{
-  font-family: "PT Sans";
+.advantages-title-city h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -66,8 +63,7 @@ body {
   text-transform: uppercase;
 }
 
-.reasons{
-  font-family: "PT Sans";
+.reasons {
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -83,7 +79,7 @@ body {
   background-color: #ffffff;
 }
 
-.advantages{
+.advantages {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -94,7 +90,6 @@ main h3 {
 }
 
 .reserve {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -104,12 +99,7 @@ main h3 {
   color: #000000;
 }
 
-.appointment-form {
-  text-align: center;
-}
-
 .services-description {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -119,7 +109,6 @@ main h3 {
 }
 
 .services-name {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -133,7 +122,6 @@ main h3 {
 }
 
 .contacts-phone {
-  font-family: "PT Sans";
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -155,7 +143,6 @@ main h3 {
 }
 
 .hotels-list h4 {
-  font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -164,7 +151,6 @@ main h3 {
 }
 
 .hotels-card-price {
-  font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -176,12 +162,11 @@ main h3 {
 
 }
 
-.hotels-card-link {
+.link {
   text-decoration: none;
 }
 
-.mailing-title{
-  font-family: "PT Sans";
+.mailing-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
