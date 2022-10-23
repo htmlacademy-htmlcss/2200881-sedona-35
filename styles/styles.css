@@ -65,7 +65,6 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -242,10 +241,6 @@ main h3 {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-}
-
-.hotels-list button {
-
 }
 
 .link {
