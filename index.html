@@ -8,12 +8,14 @@
   </head>
 
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="logo" src="images/header/logo.svg" width="140" height="70" alt="logo Седона">
-        </a>
-        <ul class="navigation-list">
+        <div class="site-navigation">
+          <a class="navigation-logo" href="index.html">
+            <img class="logo" src="images/header/logo.svg" width="140" height="70" alt="logo Седона">
+          </a>
+        <ul class="navigation-list list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-active" href="index.html">Главная</a>
           </li>
@@ -24,38 +26,39 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="user-navigation-list">
+      </div>
+        <ul class="user-navigation-list list">
           <li class="user-navigation-item">
             <a class="user-navigation-link" href="#">
               <span class="visually-hidden"></span>
               <img class="search" src="images/header/search.svg" width="18" height="18" alt="search">
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">
               <span class="visually-hidden"></span>
               <img class="favorite" src="images/header/heart.svg" width="18" height="17" alt="favorite">
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="user-navigation-item">
             <button class="button" type="input">хочу сюда</button>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">
-        SEDONA
-      </h1>
-      <img class="picture-sedona" src="images/sedona.svg" width="457" height="213" alt="Слоган Седоны">
+    <main class="main-container main-index">
+      <div class="welcome-wraper">
+      <img class="picture-sedona" src="images/main-text.svg" width="458" height="352" alt="Слоган Седоны">
+      <h1 class="visually-hidden">sedona</h1>
+      </div>
       <section>
         <h2 class="main-text">"Седона — небольшой городок в Аризоне, заслуживающий большего!"</h2>
         <p class="reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
+        <ul class="advantages-list list">
+          <li class="advantages-item advantages-item-with-photo">
             <h3 class="advantages-title-city">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="picture-city" src="images/city.jpg" width="800" height="384" alt="картинка города">
@@ -72,15 +75,15 @@
             <h3 class="advantages-title">Мало туристов</h3>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-with-photo">
+            <img class="picture-bridge" src="images/bridge.jpg" width="800" height="384" alt="картинка Моста Дьявола">
             <h3 class="advantages-title-city">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="picture-bridge" src="images/bridge.jpg" width="800" height="384" alt="картинка Моста Дьявола">
           </li>
         </ul>
       </section>
       <section>
-        <ul class="services-list">
+        <ul class="services-list list">
           <li class="services-item">
             <img class="living" src="images/home.svg" width="75" height="72" alt="living">
             <span class="services-name">Жилье</span>
@@ -126,7 +129,6 @@
         </div>
         <button class="button" type="search">Найти</button>
       </form>
-
       </section>
     </main>
     <footer class="page-footer">
@@ -144,8 +146,10 @@
         <img class="background" src="images/background-mailing.jpg" width="1200" height="415" alt="рисунок задний фон">
       </section>
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
+        <div class="page-footer-container">
+        <h2 class="visually-hidden"></h2>
+        <div class="footer-social-link">
+        <ul class="footer-social-list list">
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">VK</span>
@@ -165,11 +169,14 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
-      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a href="https://htmlacademy.ru/"><img class="picture-html-academy" src="images/footer/html-academy.svg"
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a href="https://htmlacademy.ru/"><img class="picture-html-academy" src="images/footer/html-academy.svg"
           width="115" height="33" alt="htmlacademy"></a>
+        </div>
     </footer>
+  </div>
   </body>
 
 </html>

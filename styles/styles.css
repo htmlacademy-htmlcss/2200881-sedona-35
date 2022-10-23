@@ -14,17 +14,70 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
+  flex-direction: column;
+  min-height: 100%;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 0.1px;
+  white-space: nowrap;
+  color: transparent;
+  clip-path: inset(100%);
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .page-header {
   color: #000000;
   background: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-navigation {
+  width: 617px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation-list {
+  max-width: 318px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -38,10 +91,22 @@ body {
 }
 
 .main-index {
+  display: block;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
+}
+
+.welcome-wraper {
+  width: 1200px;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+}
+
+.picture-sedona {
+  margin: 51px 371px 82px 371px:
 }
 
 .main-index h2 {
@@ -83,6 +148,24 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 400px;
+}
+
+.advantages-item-with-photo {
+  width: 100%;
+  display: flex;
 }
 
 main h3 {
@@ -119,6 +202,8 @@ main h3 {
 
 .services-list {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contacts-phone {
@@ -131,6 +216,7 @@ main h3 {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
+
 }
 
 .hotels-card-title {
@@ -182,4 +268,16 @@ main h3 {
   line-height: 26px;
   font-style: normal;
   text-align: center;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+}
+
+.footer-social-link {
+  width: 142px;
+  padding: 5px 918px 5px 0;
 }
