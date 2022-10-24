@@ -105,7 +105,7 @@ body {
 }
 
 .picture-sedona {
-  margin: 51px 371px 82px 371px:
+  margin: 51px 371px 82px 371px;
 }
 
 .main-index h2 {
@@ -117,16 +117,6 @@ body {
   background-color: #ffffff;
 }
 
-.advantages-title-city h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #82b3d3;
-  text-transform: uppercase;
-}
-
 .reasons {
   font-style: normal;
   font-weight: 400;
@@ -135,10 +125,12 @@ body {
   color: #333333;
   text-align: center;
   background-color: #ffffff;
+  margin: 166px 275px 90px;
 }
 
 .main-text {
   text-align: center;
+  margin: 69px 290px 141px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -153,6 +145,20 @@ body {
   display: flex;
 }
 
+.advantages-title-city {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+}
+
+.advantages-item-text {
+ text-transform: uppercase;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -160,15 +166,14 @@ body {
 
 .advantages-item {
   width: 400px;
+  height: 384px;
+  text-align: center;
 }
+
 
 .advantages-item-with-photo {
   width: 100%;
   display: flex;
-}
-
-main h3 {
-  text-transform: uppercase;
 }
 
 .reserve {
@@ -232,7 +237,14 @@ main h3 {
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: #333333
+}
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .hotels-card-price {
@@ -274,5 +286,7 @@ main h3 {
 
 .footer-social-link {
   width: 142px;
-  padding: 5px 918px 5px 0;
+  margin: 40px 70px 30px;
+  display: flex;
+  justify-content: flex-start;
 }
