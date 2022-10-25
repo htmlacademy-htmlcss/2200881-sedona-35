@@ -169,6 +169,7 @@ body {
   background-repeat: no-repeat;
   display: block;
   text-align: center;
+  padding-top: 51px;
 }
 
 .picture-sedona {
@@ -213,6 +214,8 @@ body {
 }
 
 .advantages-title-city {
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -220,10 +223,33 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.advantages-title {
+  text-transform: uppercase;
+
 }
 
 .advantages-item-text {
- text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.advantages-road {
+  background-color: #83B3D333;
+}
+
+.advantages-description {
+  font-weight: 400;
+  size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages-list {
@@ -275,6 +301,13 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+}
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts-phone {
