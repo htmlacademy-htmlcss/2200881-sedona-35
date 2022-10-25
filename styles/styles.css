@@ -104,6 +104,10 @@ body {
   padding: 20px 16px;
 }
 
+.text-button {
+  text-decoration: none;
+}
+
 .navigation-item {
   padding: 20px 16px;
 }
@@ -272,6 +276,7 @@ body {
 }
 
 .services-list {
+  display: flex;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -281,6 +286,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 80px 85px;
+  width: 100%;
 }
 
 .contacts-phone {
@@ -318,6 +325,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  list-style: none;
+  margin: 139px 70px 200px;
 }
 
 .hotels-card-price {
@@ -361,7 +370,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0;
 }
 
 .picture-html-academy {
@@ -376,4 +384,31 @@ body {
   display: flex;
   align-items: center;
   padding: 13px 11px;
+}
+
+.button {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  color: #ffffff;
+  border-radius: 4px;
+  flex-grow: 0;
+  border: none;
+}
+
+.button-about {
+  background-color: #756157;
+}
+
+.button-favorite {
+  background-color: #82b3d3;
+}
+
+.button-submit {
+  background-color: #82b3d3;
 }
