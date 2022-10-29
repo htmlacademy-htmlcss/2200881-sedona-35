@@ -48,7 +48,7 @@
         <div class="filter-content">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
                 <img class="home" src="images/filter-house.svg" width="12" height="12" alt="home">
@@ -115,23 +115,29 @@
               </form>
             </section>
           </div>
-          <section>
-            <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-            </select>
-              <a href="#" class="button button-light">
-                <span class="visually-hidden">Показать список</span>
-              </a>
-              <a class="button" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a class="button button-picture" href="#">
-                <span class="visually-hidden">Показать значки</span>
-              </a>
-            <ul class="hotels-list">
-              <h2 class="visually-hidden">Найдено гостинниц: 38</h2>
+          <div class="sorting-hotels">
+            <h2 class="sorting-result">Найдено гостинниц: 38</h2>
+              <select class="select-control" aria-label="Сортировка">
+                  <option value="cheap">Сначала дешёвые</option>
+                  <option value="popular">Сначала популярное</option>
+                  <option value="expensive">Сначала дорогое</option>
+              </select>
+              <div class="view-options">
+                <a href="#" class="button-view-select">
+                  <span class="visually-hidden">показать таблицей</span>
+                  <img class="sorting-view-item" src="images/catalog/sorting-table.svg" width="16px" height="14px" alt="sorting-view-table">
+                </a>
+                <a class="button-view" href="#">
+                  <span class="visually-hidden">показать слайдами</span>
+                  <img class="sorting-view-item" src="images/catalog/sorting-view-slideshow.svg" width="16px" height="14px" alt="sorting-view-slideshow">
+                </a>
+                <a class="button-view" href="#">
+                  <span class="visually-hidden">показать списком</span>
+                  <img class="sorting-view-item" src="images/catalog/sorting-view-list.svg" width="16px" height="14px" alt="sorting-view-table-list">
+                </a>
+              </div>
+          </div>
+              <ul class="hotels-list">
                   <li class="hotels-card">
                       <a class="link" href="hotels.html">
                         <img class="hotels-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="hotels-1">
@@ -227,15 +233,8 @@
                   </li>
               </ul>
               <ul class="pagination">
-                <!--
                 <li class="pagination-item">
-                  <a class="pagination-link pagination-prev pagination-disabled">
-                    <span class="visually-hidden">Предыдущая страница</span>
-                  </a>
-                </li>
-                -->
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
+                  <a class="pagination-link pagination-link-current">1</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
@@ -247,28 +246,29 @@
                   <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
+                  <a class="pagination-link pagination-next-page-link" href="#">...</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
                 </li>
-                <!--
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-next" href="#">
-                    <span class="pagination-link">10</span>
-                  </a>
-                </li>
-                -->
             </ul>
           </section>
       </main>
       <footer class="page-footer">
-        <section class="mailing mailing-catalog">
-          <h2 class="mailing-title mailing-catalog">Подпишитесь на рассылку</h2>
-          <b class="mailing-text mailing-catalog">Только полезная информация и никакого спама, честное бойскаутское!</b>
-          <form class="mailing" action="https://echo.htmlacademy.ru/" method="post"></form>
-          <button class="button" type="submit">Подписаться</button>
-        </section>
+        <div class="subscribe-catalog">
+          <div class="slogan-subscribe">
+            <h2 class="mailing-title mailing-title-catalog">Подпишитесь на рассылку</h2>
+            <b class="mailing-text mailing-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</b>
+          </div>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email"></label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+            <button class="button newsletter-button" type="submit">
+              <span class="visually-hidden">подписаться</span>
+            </button>
+          </form>
+        </div>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <div class="page-footer-container">
