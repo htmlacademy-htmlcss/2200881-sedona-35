@@ -98,6 +98,9 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  /*
+  position: relative;
+  */
 }
 
 .site-navigation {
@@ -146,7 +149,21 @@ body {
   border-radius: 4px;
   flex-grow: 0;
   border: none;
+  cursor: pointer;
 }
+
+/*
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+  padding: 22px 12px;
+}
+*/
 
 /*
 Главная страница основная часть
@@ -701,6 +718,29 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
+/*
+.footer-social-link {
+  display: block;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.footer-social-vk {
+  background-image: url("../images/footer/VK.svg");
+}
+
+.footer-social-tg {
+  background-image: url("../images/footer/telegramm.svg");
+}
+
+.footer-social-youtube {
+  background-image: url("../images/footer/youtube.svg");
+}
+*/
+
 /*
 Стили кнопок
 */
@@ -718,6 +758,7 @@ body {
   border-radius: 4px;
   flex-grow: 0;
   border: none;
+  cursor: pointer;
 }
 
 .button-about {
