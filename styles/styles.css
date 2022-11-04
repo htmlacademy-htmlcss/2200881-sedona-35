@@ -153,19 +153,6 @@ body {
 }
 
 /*
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #dbdbdb;
-  padding: 22px 12px;
-}
-*/
-
-/*
 Главная страница основная часть
 */
 
@@ -181,7 +168,9 @@ body {
   display: block;
   text-align: center;
   padding-top: 51px;
+  /*
   padding-bottom: 82px;
+  */
 }
 
 .main-index h2 {
@@ -192,6 +181,12 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
 }
+
+.picture-sedona-border {
+  align-items: center;
+  margin-top: 25px;
+}
+
 
 /*
 Причины
@@ -543,20 +538,35 @@ body {
   line-height: 16px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-decoration: none;
   border-radius: 4px;
-  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68a2ca;;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-link-current {
   color: #000000;
   background-color: #f2f2f2;
   border-radius: 4px;
+}
+
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+  background-color: #f2f2f2;
+
 }
 
 .pagination-next-page-link {
@@ -719,27 +729,40 @@ body {
   background-color: #ffffff;
 }
 
-/*
-.footer-social-link {
-  display: block;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color: #756157;
 }
 
-.footer-social-vk {
-  background-image: url("../images/footer/VK.svg");
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-social-tg {
-  background-image: url("../images/footer/telegramm.svg");
+.footer-social-link-icon {
+  fill: #83b3d3;
 }
 
-.footer-social-youtube {
-  background-image: url("../images/footer/youtube.svg");
+.footer-social-link-icon:hover,
+.footer-social-link-icon:focus{
+  fill: #68a2ca;
 }
-*/
+
+.footer-social-icon:active {
+  fill:rgba(104, 162, 202, 0.3);
+  /*
+  opacity: 0.3;
+  */
+}
+
+.footer-social-site-html:hover,
+.footer-social-site-html:focus {
+  fill: #756157;
+}
+
+.footer-social-site-html:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 /*
 Стили кнопок
@@ -785,6 +808,64 @@ body {
   text-decoration: none;
 }
 
+.button-brown {
+  background-color: #756157;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #615048;
+}
+
+.button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68a2ca;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #6c9e42;
+}
+
+.button-green:active {
+  opacity: 0.3;
+}
+
+.button-without-background {
+  color: #ffffff;
+  order: 1;
+  flex-grow: 0;
+}
+
+.button-without-background:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-without-background:focus {
+  border: 3px solid #83b3d3;
+}
+
+.button-without-background:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 /*
 Хлебные крошки каталога
 */
@@ -795,6 +876,17 @@ body {
   list-style-type: none;
   padding: 0;
   gap: 10px;
+  cursor: pointer;
+}
+
+.breadcrumbs-link,
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*
@@ -898,4 +990,13 @@ body {
   border-radius: 4px;
   width: 48px;
   height: 48px;
+}
+
+.button-view:hover,
+.button-view:active {
+  border: 2px solid #000000;
+}
+
+.button-view:focus {
+  border: 2px solid #68a2ca;
 }
