@@ -318,7 +318,6 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-
 .sedona-advantages-wrapper {
   position: relative;
 }
@@ -462,6 +461,13 @@ body {
 /*
 Список гостинниц
 */
+
+.hotels-catalog {
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+}
+
 .hotels-card-title {
   font-family: "PT Sans";
   font-weight: 700;
@@ -980,6 +986,31 @@ body {
 Блок фильтра каталога
 */
 
+.control-input {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  background-image: url(..//images/catalog/check-mark.svg);
+}
+
+.catalog-filter-title {
+  padding-bottom: 32px;
+
+}
+
+.catalog-filter-item {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.control:hover .control-input {
+  border-color: #814b18;
+}
+
+.control-input:disabled + .control-input {
+  border-color: #242424;
+}
+
 .filter-content {
   display: flex;
   background-image: url("../images/filter-background.jpg");
@@ -1003,8 +1034,9 @@ body {
   display: flex;
   list-style-type: none;
   width: 1060px;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: flex-start;
+  gap: 70px;
 }
 
 .catalog-filter-group {
@@ -1012,11 +1044,18 @@ body {
   list-style-type: none;
   padding: 0;
   justify-content: space-evenly;
+  gap: 70px;
 }
 
 .button-filter-catalog {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 32px;
+  width: 191px;
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+
 }
 
 .sorting-hotels {
@@ -1037,7 +1076,8 @@ body {
   align-items: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 14px 100px 14px 20px;
+  padding: 14px 10px 14px 20px;
+  background-image: ;
 }
 
 .sorting-result {
@@ -1080,6 +1120,12 @@ body {
   border: 2px solid #000000;
 }
 
+.price-select {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
 .button-view-selected {
   display: flex;
   flex-direction: column;
@@ -1090,3 +1136,273 @@ body {
   width: 48px;
   height: 48px;
 }
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 0px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+  opacity: 0.3;
+}
+
+.range-bar {
+  position: absolute;
+  width: 226px;
+  height: 0px;
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -10px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -10px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  width: 288px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control-checkbox {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+
+.control-input[type="checkbox"]:checked + .control-checkbox::before,
+.control-input[type="checkbox"]:checked + .control-checkbox::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(..//images/catalog/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-checkbox:hover {
+  background-image: #ffffff;
+}
+
+.control-checkbox:focus {
+  background-color: #ffffff;
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.control-checkbox:active {
+  background-color: #ffffff;
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.control-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  content: "";
+}
+
+
+.control-input[type="radio"]:checked + .control-radio::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(..//images/catalog/circle.svg);
+  border-radius: 50%;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  width: 143px;
+}
+
+.catalog-filter-label-min {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  width: 143px;
+}
+
+.catalog-filter-label-max {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 0px 4px 4px 0px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  width: 143px;
+}
+
+.price-value {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.range {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+/* Модальное окно */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  /*
+  padding: 64px 70px;
+  */
+}
+
+.modal-search-list {
+  display: flex;
+  align-items: center;
+  width: 717px;
+  height: 576px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 64px 70px;
+}
+
+.modal-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  order: 1;
+  align-self: stretch;
+}
+
+.date-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 24px 12px 0;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 62px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: none;
+  background-image: url("../images/cross-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.appointment-form-field-incoming,
+.appointment-form-field-exit {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 137px);
+  align-items: flex-end;
+}
+
+.button-appointment {
+  width: 100%;
+}
+/*
+.select-control {
