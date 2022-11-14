@@ -5,6 +5,7 @@
     <meta charset="utf 8">
     <title>SEDONA</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
       <div class="container">
@@ -174,7 +175,7 @@
         </footer>
       </div>
     </div>
-    <div class="modal-container visually-hidden">
+    <div class="modal-container">
       <div class="modal-search-list modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -182,27 +183,33 @@
         <section class="modal-content">
           <h2 class="modal-title">поиск гостиницы в Седоне</h2>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="incoming-date date-text">
-              <label for="first-date">Дата Заезда</label>
-              <input class="appointment-form-field-incoming" type="date" id="date" name="date" />
+            <div class="date-input-block">
+              <label class="date-text" for="first-date">Дата Заезда:</label>
+              <input class="appointment-form-field-incoming" type="date" id="date" name="date"/>
             </div>
-            <div class="exit-date date-text">
-              <label for="last-date">Дата Выезда</label>
-              <input class="appointment-form-field-exit" type="date" id="date" name="date" />
-            </p>
+            <div class="date-input-block">
+              <label class="date-text" for="last-date">Дата Выезда:</label>
+              <input class="appointment-form-field-exit" type="date" id="name" name="date"/>
+            </div>
             <div class="section">
-              <label for="adults" class="field-label">Взрослые</label>
-              <label for="adults" class="field prepend-icon">
-                <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Взрослые">
-                <span class="field-icon"><i class="fa fa-users"></i></span>
-              </label>
-              <label for="children" class="field-label">Дети</label>
-              <label for="children" class="field prepend-icon">
-                <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Дети">
-                <span class="field-icon"><i class="fa fa-users"></i></span>
-              </label>
+                <div class="count-guest-wrapper">
+                  <div class="count-adult">
+                    <label for="adults" class="field-label-name">Взрослые:</label>
+                      <input class="" type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Взрослые">
+                      <button class="count-guest-down"></button>
+                      <button class="count-guest-up"></button>
+                      <span class="field-icon"><i class="fa fa-users"></i></span>
+                  </div>
+                  <div class="count-children">
+                    <label for="children" class="field-label-name">Дети:</label>
+                      <input class="" type="number" id="children" name="children" class="gui-input" required="" placeholder="Дети">
+                      <button class="count-guest-down"></button>
+                      <button class="count-guest-up"></button>
+                      <span class="field-icon"><i class="fa fa-users"></i></span>
+                  </div>
+                </div>
+              <button class="button button-blue button-appointment" type="search">Найти</button>
             </div>
-            <button class="button button-blue button-appointment" type="search">Найти</button>
           </form>
         </section>
       </div>

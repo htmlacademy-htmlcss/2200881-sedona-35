@@ -170,6 +170,7 @@ body {
 }
 
 .favorite-count {
+  position: absolute;
   display: flex;
   justify-content: center;
   width: 20px;
@@ -181,6 +182,12 @@ body {
   background-color: #7db54f;
   border-radius: 10px;
   color: #ffffff;
+}
+
+.range-input[type="number"] {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /*
@@ -466,6 +473,11 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 140px;
+  margin: 40px;
+}
+
+.control-input:focus {
+
 }
 
 .hotels-card-title {
@@ -869,6 +881,7 @@ body {
 }
 
 .button-favorite {
+  position: relative;
   padding: 8px auto;
   background-color: #82b3d3;
 }
@@ -995,6 +1008,10 @@ body {
 
 .catalog-filter-title {
   padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
 
 }
 
@@ -1037,6 +1054,7 @@ body {
   justify-content:space-between;
   align-items: flex-start;
   gap: 70px;
+  margin-top: 40px;
 }
 
 .catalog-filter-group {
@@ -1054,7 +1072,7 @@ body {
   width: 191px;
   text-align: center;
   padding: 0;
-  margin-top: 0;
+  margin-top: 56px;
 
 }
 
@@ -1078,6 +1096,14 @@ body {
   border-radius: 4px;
   padding: 14px 10px 14px 20px;
   background-image: ;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
 }
 
 .sorting-result {
@@ -1140,11 +1166,11 @@ body {
 .range-scale {
   position: relative;
   width: 287px;
-  height: 0px;
+  height: 5px;
   margin-bottom: 16px;
-  background-color: #ffffff;
-  border: 4px solid #ffffff;
-  opacity: 0.3;
+  margin-top: 36px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: -2px;
 }
 
 .range-bar {
@@ -1167,7 +1193,7 @@ body {
 
 .toggle-min {
   top: -10px;
-  left: -10px;
+  left: -4px;
 }
 
 .toggle-max {
@@ -1179,6 +1205,7 @@ body {
   display: flex;
   gap: 2px;
   width: 288px;
+  margin-top: 32px;
 }
 
 .control {
@@ -1265,6 +1292,7 @@ body {
   padding: 12px 20px;
   justify-content: space-between;
   width: 143px;
+  border: none;
 }
 
 .catalog-filter-label-min {
@@ -1290,6 +1318,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .range-input {
@@ -1306,6 +1336,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   margin: 0;
+
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1331,25 +1362,21 @@ body {
   position: relative;
   margin: auto;
   background-color: #ffffff;
-  /*
-  padding: 64px 70px;
-  */
 }
 
 .modal-search-list {
   display: flex;
   align-items: center;
-  width: 717px;
-  height: 576px;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  padding: 64px 70px;
 }
 
 .modal-content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin: 64px 70px;
+  width: 577px;
 }
 
 .modal-title {
@@ -1359,6 +1386,26 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.field-label-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.count-guest-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 88px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
 }
 
 .appointment-form {
@@ -1374,7 +1421,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  padding: 12px 24px 12px 0;
+  padding: 12px 0;
+  width: 137px;
 }
 
 .modal-close-button {
@@ -1390,19 +1438,31 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 50%;
+}
+
+.date-input-block {
+  display: flex;
 }
 
 .appointment-form-field-incoming,
 .appointment-form-field-exit {
-  display: flex;
   justify-content: space-between;
-  width: calc(100% - 137px);
+  flex-grow: 1;
   align-items: flex-end;
+  margin: 0;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
 }
 
 .button-appointment {
   width: 100%;
+  padding: 18px 256.5px;
+  border-radius: 10px;
 }
-/*
-.select-control {
+
+
+.catalog-filter-label {
+  color:rgba(0, 0, 0, 0.3)
+}
