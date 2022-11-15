@@ -60,6 +60,7 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-information-container {
@@ -474,10 +475,6 @@ body {
   margin: 40px;
 }
 
-.control-input:focus {
-
-}
-
 .hotels-card-title {
   font-family: "PT Sans";
   font-weight: 700;
@@ -486,7 +483,8 @@ body {
   line-height: 28px;
   color: #000000;
   text-align: left;
-  padding: 0 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .hotels-card {
@@ -503,7 +501,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .hotels-list h4 {
@@ -542,7 +541,8 @@ body {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  margin: 16px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .button-favorite-submit {
@@ -560,6 +560,7 @@ body {
   justify-content: space-between;
   align-self: stretch;
   margin: 16px 20px 20px;
+  margin-top: 0;
   gap: 20px;
 }
 
@@ -735,9 +736,10 @@ body {
   width: 452px;
   padding: 14px 345px 14px 20px;
   border: none;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  outline: none;
 }
 
 .newsletter-form {
@@ -1062,7 +1064,20 @@ body {
   text-align: center;
   padding: 0;
   margin-top: 56px;
+}
 
+.catalog-filter-label:hover {
+  background-color: #e6e6e6;
+}
+
+.catalog-filter-label:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.catalog-filter-label:active {
+  background-color: #e6e6e6;
+  border: 2px solid #000000;
 }
 
 .sorting-hotels {
@@ -1084,6 +1099,24 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 14px 10px 14px 20px;
+  appearance: none;
+  background-image: url(..//images/catalog/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  outline: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .control:hover {
@@ -1231,7 +1264,7 @@ body {
 }
 
 .control-checkbox:hover {
-  background-image: #ffffff;
+  background-color: #ffffff;
 }
 
 .control-checkbox:focus {
@@ -1449,6 +1482,9 @@ body {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .appointment-form-field-incoming,
@@ -1519,7 +1555,8 @@ body {
 }
 
 .field-label-name {
-  padding-right: ;
+  display: flex;
+  text-align: center;
 }
 
 
@@ -1538,6 +1575,60 @@ body {
 }
 
 .error-text {
-  margin: 0;
-  padding: 0;
+  margin: 50px 140px;
+  padding: 0 20px;
+  position: absolute;
+  color: #ff5757;
+}
+
+.info-text {
+  position: absolute;
+  padding: 0 20px;
+  margin: 150px;
+}
+
+.tooltip-toggle {
+  display: flex;
+  padding: 4px 9px;
+  border: none;
+  margin: 3px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.tooltip-text {
+  display: none;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 216px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 7%;
+  left: 48%;
+  z-index: 1;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/corner.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left: -7%;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
