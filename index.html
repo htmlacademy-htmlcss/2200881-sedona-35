@@ -6,6 +6,7 @@
     <title>SEDONA</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
       <div class="container">
@@ -185,27 +186,28 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="date-input-block">
               <label class="date-text" for="first-date">Дата Заезда:</label>
-              <input class="appointment-form-field-incoming" type="date" id="date" name="date"/>
+              <input class="appointment-form-field-incoming" type="text" id="date" name="date" value="27 октября 2020"/>
             </div>
+            <p class="error-text">Мы не можем отпарвить вас в прошлое.</p>
             <div class="date-input-block">
               <label class="date-text" for="last-date">Дата Выезда:</label>
-              <input class="appointment-form-field-exit" type="date" id="name" name="date"/>
+              <input class="appointment-form-field-exit" type="text" id="date" name="date" value="1 сентября 2023"/>
             </div>
+            <p class="info-text">На эти даты есть свободные номер. Пока есть.</p>
             <div class="section">
                 <div class="count-guest-wrapper">
-                  <div class="count-adult">
                     <label for="adults" class="field-label-name">Взрослые:</label>
-                      <input class="" type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Взрослые">
-                      <button class="count-guest-down"></button>
-                      <button class="count-guest-up"></button>
-                      <span class="field-icon"><i class="fa fa-users"></i></span>
-                  </div>
-                  <div class="count-children">
+                    <div class="count-adult">
+                      <button class="count-guest-down" type="button"></button>
+                      <input class="gui-input" type="number" id="adults" name="adults"  required placeholder="2">
+                      <button class="count-guest-up" type="button"></button>
+                    </div>
                     <label for="children" class="field-label-name">Дети:</label>
-                      <input class="" type="number" id="children" name="children" class="gui-input" required="" placeholder="Дети">
-                      <button class="count-guest-down"></button>
-                      <button class="count-guest-up"></button>
-                      <span class="field-icon"><i class="fa fa-users"></i></span>
+                    <div class="count-children">
+                      <button class="count-guest-down" type="button"></button>
+                      <input class="gui-input" type="number" id="children" name="children"  required placeholder="2">
+                      <button class="count-guest-up" type="button"></button>
+                    </div>
                   </div>
                 </div>
               <button class="button button-blue button-appointment" type="search">Найти</button>
