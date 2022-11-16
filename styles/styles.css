@@ -554,6 +554,7 @@ body {
 .button-favorite-submit {
   display: flex;
   background-color: #7db54f;
+  width: 140px;
 }
 
 .link {
@@ -861,7 +862,7 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  padding: 8px 26px;
+  padding: 8px 5px;
   color: #ffffff;
   border-radius: 4px;
   flex-grow: 0;
@@ -877,12 +878,14 @@ body {
 
 .button-about {
   background-color: #756157;
+  width: 140px;
 }
 
 .button-favorite {
   position: relative;
-  padding: 8px auto;
+  padding: 8px 20px;
   background-color: #82b3d3;
+  width: 140px;
 }
 
 .button-submit {
@@ -1525,22 +1528,23 @@ body {
   outline: 2px solid #000000;
 }
 
-.count-guest-down:hover,
-.count-guest-up:hover {
-  color: #000000;
+.count-guest-down:hover svg,
+.count-guest-up:hover svg {
+  fill: #000000;
 }
 
 .count-guest-down:focus,
 .count-guest-up:focus {
-  color: #000000;
-  outline: 3px solid #82b3d3;
+  fill: #000000;
 }
 
 .count-guest-down:active,
 .count-guest-up:active {
-  color: #000000;
+  fill: #000000;
   opacity: 0.2;
 }
+
+
 
 .button-appointment {
   width: 100%;
@@ -1563,6 +1567,7 @@ body {
 .count-adult {
   display: flex;
   margin-left: 46px;
+  background-color: #f2f2f2;
 }
 
 .gui-input::-webkit-outer-spin-button,
@@ -1571,18 +1576,14 @@ body {
 }
 
 .count-guest-down {
-  background-image: url(..//images/minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  opacity: 0.3;
   border: none;
   padding: 14px 10px;
   width: 40px;
 }
 
 .count-guest-up {
-  background-image: url(..//images/plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  opacity: 0.3;
   border: none;
   padding: 14px 10px;
   width: 40px;
