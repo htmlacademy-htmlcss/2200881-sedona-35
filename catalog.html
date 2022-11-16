@@ -90,8 +90,8 @@
                       </label>
                     </li>
                   </ul>
-                  </fieldset>
-                  <fieldset class="catalog-filter-group">
+              </fieldset>
+              <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Тип Жилья:</legend>
                       <ul class="catalog-filter-list list">
                         <li class="catalog-filter-item">
@@ -116,20 +116,22 @@
                           </label>
                         </li>
                       </ul>
-                  </fieldset>
+                </fieldset>
                   <div class="price-select">
                     <div class="range">
                       <h3 class="price-value">Стоимость, ₽:</h3>
-                      <div class="range-wrapper-inputs">
-                        <label class="catalog-filter-label catalog-filter-label-min">
-                          <input class="range-input" type="number" value="0" name="min-price" style="width: 40px">от
-                        </label>
-                        <label class="catalog-filter-label catalog-filter-label-max">
-                          <input class="range-input" type="number" value="9000" name="max-price" style="width: 45px">до
-                        </label>
+                      <div class="range-input-container">
+                        <div class="range-input-wrapper">
+                          <input class="range-input range-input-min" type="number" value="0" name="min-price">
+                          <label class="catalog-filter-label catalog-filter-label-min">от</label>
+                        </div>
+                        <div class="range-input-wrapper">
+                          <input class="range-input range-input-max" type="number" value="9000" name="max-price">
+                          <label class="catalog-filter-label catalog-filter-label-max">до</label>
+                        </div>
                       </div>
                       <div class="range-scale">
-                        <div class="range-bar" style="left: 0; width: 226px">
+                        <div class="range-bar">
                           <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                           </button>
