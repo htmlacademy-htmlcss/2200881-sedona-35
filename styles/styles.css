@@ -1445,7 +1445,7 @@ body {
 .count-guest-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 577px;
+  align-items: center;
 }
 
 .section {
@@ -1528,21 +1528,31 @@ body {
   outline: 2px solid #000000;
 }
 
-.count-guest-down:hover svg,
-.count-guest-up:hover svg {
-  fill: #000000;
+.count-guest-button {
+  border: none;
 }
 
-.count-guest-down:focus,
-.count-guest-up:focus {
-  fill: #000000;
+.count-guest-button svg {
+  fill-opacity: 0.3;
+  border-radius: 4px;
 }
 
-.count-guest-down:active,
-.count-guest-up:active {
+.count-guest-button:hover svg {
   fill: #000000;
-  opacity: 0.2;
+  fill-opacity: 1;
 }
+
+.count-guest-button:focus svg {
+  fill: #000000;
+  outline: 3px solid #82b3d3;
+}
+
+.count-guest-button:active svg {
+  fill: #000000;
+  fill-opacity: 0.2;
+}
+
+
 
 
 
@@ -1568,6 +1578,12 @@ body {
   display: flex;
   margin-left: 46px;
   background-color: #f2f2f2;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.count-adult {
+  margin-right: 88px;
 }
 
 .gui-input::-webkit-outer-spin-button,
@@ -1638,10 +1654,13 @@ body {
   display: flex;
   padding: 4px 9px;
   border: none;
-  margin: 3px;
   background-color: #83b3d3;
   border-radius: 50%;
   position: absolute;
+}
+
+.tooltip {
+  position: relative;
 }
 
 .tooltip-text {
