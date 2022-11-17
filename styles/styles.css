@@ -561,7 +561,7 @@ body {
   text-decoration: none;
 }
 
-.raiting {
+.rating {
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -570,7 +570,7 @@ body {
   align-items: center;
 }
 
-.hotels-raiting {
+.hotels-rating {
   font-weight: 400;
   font-size: 16px;
   align-items: flex-end;
@@ -749,6 +749,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .newsletter-form {
@@ -870,6 +871,10 @@ body {
   cursor: pointer;
 }
 
+.button-reset {
+  width: 191px;
+}
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -890,6 +895,7 @@ body {
 
 .button-submit {
   background-color: #82b3d3;
+  width: 191px;
 }
 
 .inner-header{
@@ -1435,17 +1441,31 @@ body {
   margin-bottom: 64px;
 }
 
+.count-children-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.field-label-name-children {
+  position: absolute;
+  left: -70%;
+}
+
 .field-label-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  display: flex;
+  text-align: center;
 }
 
 .count-guest-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .section {
@@ -1584,6 +1604,8 @@ body {
 
 .count-adult {
   margin-right: 88px;
+  position: absolute;
+  left: 16%;
 }
 
 .gui-input::-webkit-outer-spin-button,
@@ -1619,12 +1641,6 @@ body {
   line-height: 20px;
 }
 
-.field-label-name {
-  display: flex;
-  text-align: center;
-}
-
-
 .modal-close-button:hover {
   background-color: #e6e6e6;
 }
@@ -1657,10 +1673,8 @@ body {
   background-color: #83b3d3;
   border-radius: 50%;
   position: absolute;
-}
-
-.tooltip {
-  position: relative;
+  left: -25%;
+  top: 30%;
 }
 
 .tooltip-text {
@@ -1677,8 +1691,9 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 7%;
-  left: 48%;
   z-index: 1;
+  left: -102%;
+  top: 80%;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
