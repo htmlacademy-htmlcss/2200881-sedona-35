@@ -743,28 +743,38 @@ body {
 .field-newsletter {
   background-color: #f2f2f2;
   width: 452px;
-  padding: 14px 345px 14px 20px;
+  padding: 12px 20px;
   border: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   outline: none;
   box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
 }
 
 .newsletter-form {
   display: flex;
   text-align: left;
-  width: 452px;
   border-radius: 4px;
 }
 
 .newsletter-button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #82b3d3;
+  justify-content: center;
+  text-transform: uppercase;
   width: 232px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: #82b3d3;
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  padding: 8px 5px;
+  flex-grow: 0;
+  cursor: pointer;
 }
 
 /*
@@ -1531,18 +1541,18 @@ body {
   line-height: 24px;
 }
 
-.appointment-form-field-incoming,
+.appointment-form-field-incoming:hover,
 .appointment-form-field-exit:hover {
   background-color: #e6e6e6;
 }
 
-.appointment-form-field-incoming,
+.appointment-form-field-incoming:focus,
 .appointment-form-field-exit:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
 
-.appointment-form-field-incoming,
+.appointment-form-field-incoming:active,
 .appointment-form-field-exit:active {
   background-color: #f2f2f2;
   outline: 2px solid #000000;
@@ -1694,6 +1704,7 @@ body {
   z-index: 1;
   left: -102%;
   top: 80%;
+
 }
 
 .tooltip-toggle:hover + .tooltip-text,
