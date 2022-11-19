@@ -271,12 +271,21 @@ body {
 }
 
 .welcome-wrapper {
+  position: relative;
   background-image: url("../images/index-background.jpg");
-  background-color: #ffffff;
+  background-color: #5f9ea0;
   background-repeat: no-repeat;
   display: block;
   text-align: center;
   padding-top: 51px;
+  min-height: 430px;
+}
+
+.welcome-wrapper::before {
+  content: url(..//images/border-main-image.svg);
+  position: absolute;
+  top: 424px;
+  left: 0;
 }
 
 .main-index h2 {
@@ -286,6 +295,14 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .picture-sedona-border {
@@ -497,6 +514,7 @@ body {
   line-height: 21px;
   color: #333333;
   text-align: center;
+  margin-top: 0;
 }
 
 .services-name {
@@ -528,11 +546,24 @@ h4 {
 
 .services-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 80px 85px;
   width: 230px;
+}
+
+.services-item-house::before {
+  content: url(../images/house-icon.svg);
+}
+
+.services-item-food::before {
+  content: url(../images/food.svg);
+}
+
+.services-item-souvenir::before {
+  content: url(../images/souvenir.svg);
 }
 
 .services-item:nth-child(2n-1) {
@@ -746,7 +777,7 @@ h4 {
   display: flex;
   align-items: center;
   background-image: url("../images/background-mailing.jpg");
-  background-color: #ffffff;
+  background-color: #615048;
   background-repeat: no-repeat;
   background-size: 1200px;
   justify-content: center;
@@ -1116,7 +1147,6 @@ h4 {
   background-color: #ffffff;
   border-radius: 4px;
   background-image: url(..//images/catalog/check-mark.svg);
-  background-color: #ffffff;
 }
 
 .catalog-filter-title {
@@ -1137,18 +1167,18 @@ h4 {
   border-color: #814b18;
 }
 
-.control-input:disabled + .control-input {
-  border-color: #242424;
+.comtrol-input:focus + .control-checkbox {
+  outline: 3px solid #83b3d3
 }
 
-.control-input:focus + label {
-  outline: #000000;
+.control-input:disabled + .control-input {
+  border-color: #242424;
 }
 
 .filter-content {
   display: flex;
   background-image: url("../images/filter-background.jpg");
-  background-color: #ffffff;
+  background-color: #615048;
   color: #ffffff;
   padding: 35px 70px 70px;
   border: none;
@@ -1195,6 +1225,7 @@ h4 {
 
 .range-input:hover {
   background-color: #e6e6e6;
+  opacity: 0.6;
 }
 
 .range-input:focus {
@@ -1396,6 +1427,7 @@ h4 {
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 5px;
 }
 
 .control-checkbox:hover {
@@ -1609,7 +1641,6 @@ h4 {
   background-color: #f2f2f2;
   border: none;
   background-image: url("../images/cross-close.svg");
-  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1631,7 +1662,6 @@ h4 {
   border-radius: 4px;
   border: none;
   background-image: url(..//images/calendar.svg);
-  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: 95% 50%;
   padding-left: 20px;
@@ -1703,6 +1733,7 @@ h4 {
   justify-content: space-between;
   right: 15px;
   top: 25%;
+  background: transparent;
 }
 
 .count-children,
@@ -1814,7 +1845,7 @@ h4 {
   display: block;
   height: fit-content;
 }
-!
+
 .tooltip-text:after {
   content:'';
   background-image: url("../images/corner.svg");
