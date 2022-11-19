@@ -848,6 +848,9 @@ h4 {
 }
 
 .field-newsletter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   background-color: #f2f2f2;
   width: 452px;
   padding: 14px 20px;
@@ -857,6 +860,12 @@ h4 {
   border-radius: 4px 0 0 4px;
 }
 
+.field-newsletter[placeholder] {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .newsletter-form {
   display: flex;
   text-align: left;
@@ -864,9 +873,6 @@ h4 {
 }
 
 .newsletter-email {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
   color: #000000;
   opacity: 0.6;
 }
@@ -1128,6 +1134,7 @@ h4 {
 .breadcrumbs-link {
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .breadcrumbs-link,
