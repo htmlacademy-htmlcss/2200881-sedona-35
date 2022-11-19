@@ -80,11 +80,12 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 0 70px;
+  padding: 0 58px 0 70px;
 }
 
 .navigation-list {
   display: flex;
+  margin-left: 30px;
 }
 
 .user-navigation-list {
@@ -164,7 +165,7 @@ body {
   align-items: center;
   text-decoration: none;
   flex-wrap: wrap;
-  padding: 0 16px;
+  padding-right: 16px;
 }
 
 .text-button {
@@ -220,13 +221,15 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  padding: 8px 50px;
+  padding: 8px 34px;
   color: #ffffff;
   background-color: #756157;
   border-radius: 4px;
   flex-grow: 0;
   border: none;
   cursor: pointer;
+  margin: 0;
+  width: 160px;
 }
 
 .navigation-item {
@@ -303,6 +306,7 @@ h1 {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .picture-sedona-border {
@@ -330,6 +334,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 69px 0 90px;
+  position: relative;
 }
 
 .slogan-text {
@@ -866,6 +871,20 @@ h4 {
   opacity: 0.6;
 }
 
+.field-newsletter:hover {
+  background-color: #e6e6e6;
+}
+
+.field-newsletter:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.field-newsletter:active {
+  background-color: #f2f2f2;
+  outline: 2px solid #000000;
+}
+
 .newsletter-button {
   display: flex;
   align-items: center;
@@ -1163,12 +1182,16 @@ h4 {
   padding-bottom: 16px;
 }
 
-.control:hover .control-input {
-  border-color: #814b18;
+.control-input:focus + .control-checkbox {
+  outline: 3px solid #83b3d3;
 }
 
-.comtrol-input:focus + .control-checkbox {
-  outline: 3px solid #83b3d3
+.control-input:focus + .control-radio {
+  outline: 3px solid #83b3d3;
+}
+
+.control:hover .control-input {
+  border-color: #814b18;
 }
 
 .control-input:disabled + .control-input {
@@ -1263,6 +1286,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: 90% 50%;
   outline: none;
+  cursor: pointer;
 }
 
 .select-control:hover,
@@ -1312,6 +1336,8 @@ h4 {
   width: 48px;
   height: 48px;
   outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-view:hover {
@@ -1324,6 +1350,18 @@ h4 {
 
 .button-view:active {
   outline: 2px solid #000000;
+}
+
+.button-view-left {
+  background-image: url(../images/catalog/sorting-view-table.svg);
+}
+
+.button-view-center {
+  background-image: url(../images/catalog/sorting-view-slideshow.svg);
+}
+
+.button-view-right {
+  background-image: url(../images/catalog/sorting-view-list.svg);
 }
 
 .price-select {
