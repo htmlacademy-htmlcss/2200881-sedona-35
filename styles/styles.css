@@ -1221,7 +1221,7 @@ body {
 
 .catalog-filter-item {
   display: flex;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 }
 
 .control-input:focus + .control-checkbox {
@@ -1245,7 +1245,7 @@ body {
   background-image: url("../images/filter-background.jpg");
   background-color: #615048;
   color: #ffffff;
-  padding: 35px 70px 50px;
+  padding: 35px 70px 60px;
   border: none;
   align-items: flex-start;
   text-decoration: none;
@@ -1265,9 +1265,7 @@ body {
   display: flex;
   list-style-type: none;
   width: 1060px;
-  justify-content:space-between;
   align-items: flex-start;
-  gap: 70px;
   margin-top: 40px;
 }
 
@@ -1276,7 +1274,14 @@ body {
   list-style-type: none;
   padding: 0;
   justify-content: space-evenly;
-  gap: 70px;
+}
+
+.catalog-filter-group-left {
+  margin-right: 67px;
+}
+
+.catalog-filter-group-right {
+  margin-right: 140px;
 }
 
 .button-filter-catalog {
@@ -1306,9 +1311,9 @@ body {
 
 .sorting-hotels {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 50px 0 40px;
+  width: 1060px;
 }
 
 .select-control {
@@ -1330,6 +1335,7 @@ body {
   background-position: 90% 50%;
   outline: none;
   cursor: pointer;
+  margin-right: 70px;
 }
 
 .select-control:hover,
@@ -1359,7 +1365,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   align-items: flex-start;
+  min-width: 338px;
   margin: 0;
+  margin-right: 180px;
 }
 
 .view-options {
