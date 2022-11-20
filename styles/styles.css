@@ -195,6 +195,7 @@ body {
   order: 0;
   flex-grow: 0;
   margin-bottom: -6px;
+  z-index: 1;
 }
 
 .logo:hover {
@@ -214,7 +215,7 @@ body {
 }
 
 .user-navigation-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -300,13 +301,12 @@ body {
   background-color: #ffffff;
 }
 
-h1 {
+.main-text {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 0;
 }
 
 .picture-sedona-border {
@@ -335,6 +335,8 @@ h1 {
   align-items: center;
   padding: 69px 0 90px;
   position: relative;
+  box-sizing: border-box;
+  height: 282px;
 }
 
 .slogan-text {
@@ -382,6 +384,10 @@ h1 {
 .advantages-title {
   position: relative;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0;
 }
 
 .sedona-advantages-wrapper {
@@ -390,7 +396,7 @@ h1 {
   text-align: center;
   align-items: center;
   width: 230px;
-  margin: 103px 85px 121px;
+  margin: 92px 85px 111px;
 }
 
 .advantages-item-text {
@@ -432,6 +438,7 @@ h1 {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin-top: 38px;
 }
 
 .advantages-list {
@@ -494,7 +501,7 @@ h1 {
   text-align: center;
   width: 592px;
   display: flex;
-  margin-top: 20px;
+  margin: 0;
 }
 
 .search-hotels-button {
@@ -519,7 +526,7 @@ h1 {
   line-height: 21px;
   color: #333333;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
 }
 
 .services-name {
@@ -530,18 +537,23 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   padding: 30px 0;
-}
-
-
-h5 {
   margin: 0;
 }
 
-h4 {
+
+.hotels-information {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
+.inner-header-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+}
 
 .services-list {
   display: flex;
@@ -591,7 +603,7 @@ h4 {
 }
 
 .hotels-card-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -997,7 +1009,7 @@ h4 {
 */
 
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1617,7 +1629,7 @@ h4 {
 }
 
 .modal-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
