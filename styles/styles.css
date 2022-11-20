@@ -612,6 +612,7 @@ body {
   color: #000000;
   text-align: left;
   margin-bottom: 0;
+  margin-top: 12px;
 }
 
 .hotels-card {
@@ -696,11 +697,12 @@ body {
   align-items: flex-end;
   width: 140px;
   text-align: center;
+  text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 20px 8px 21px;
   box-sizing: border-box;
 }
 
