@@ -335,6 +335,8 @@ h1 {
   align-items: center;
   padding: 69px 0 90px;
   position: relative;
+  box-sizing: border-box;
+  height: 282px;
 }
 
 .slogan-text {
@@ -382,6 +384,10 @@ h1 {
 .advantages-title {
   position: relative;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0;
 }
 
 .sedona-advantages-wrapper {
@@ -432,6 +438,7 @@ h1 {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin-top: 38px;
 }
 
 .advantages-list {
@@ -494,7 +501,7 @@ h1 {
   text-align: center;
   width: 592px;
   display: flex;
-  margin-top: 20px;
+  margin: 0;
 }
 
 .search-hotels-button {
@@ -519,7 +526,7 @@ h1 {
   line-height: 21px;
   color: #333333;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
 }
 
 .services-name {
