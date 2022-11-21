@@ -211,7 +211,7 @@ body {
 }
 
 .user-navigation-item {
-  padding: 0 12px;
+  padding: 0 15px;
 }
 
 .user-navigation-button {
@@ -396,7 +396,7 @@ body {
   text-align: center;
   align-items: center;
   width: 230px;
-  margin: 92px 85px 90px;
+  margin: 85px 85px 90px;
 }
 
 .advantages-item-text {
@@ -516,7 +516,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   width: 376px;
-  height: 52px;
   align-items: center;
   background-color: #756157;
   color: #ffffff;
@@ -617,7 +616,7 @@ body {
   color: #000000;
   text-align: left;
   margin-bottom: 0;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .hotels-card {
@@ -685,6 +684,7 @@ body {
 .link {
   text-decoration: none;
 }
+
 
 .rating {
   width: 300px;
@@ -792,6 +792,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .mailing-catalog {
@@ -858,6 +859,7 @@ body {
   line-height: 26px;
   font-style: normal;
   text-align: center;
+  margin-top: 7px;
 }
 
 .newsletter-wrapper {
@@ -919,8 +921,8 @@ body {
   text-transform: uppercase;
   width: 232px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   background: #82b3d3;
   color: #ffffff;
   border-radius: 0 4px 4px 0;
@@ -944,6 +946,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 150px;
 }
 
 .picture-html-academy {
@@ -954,6 +958,11 @@ body {
   align-items: center;
 }
 
+.footer-contact-phone-wrapper {
+  flex-wrap: wrap;
+  width: 400px;
+}
+
 .footer-social-item {
   display: flex;
   align-items: center;
@@ -961,6 +970,7 @@ body {
 }
 
 .contacts-phone {
+  display: block;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -1012,6 +1022,12 @@ body {
   outline: none;
 }
 
+.footer-contact-site-wrapper {
+  display: block;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
 
 /*
 Стили кнопок
@@ -1043,7 +1059,7 @@ body {
 
 .button-about {
   background-color: #756157;
-  width: 140px;
+  width: 130px;
 }
 
 .button-favorite {
@@ -1475,7 +1491,7 @@ body {
 
 .toggle-max {
   top: -10px;
-  right: -2px;
+  right: 3px;
 }
 
 .range-input-wrapper {
@@ -1697,6 +1713,7 @@ body {
   text-transform: capitalize;
   display: flex;
   text-align: center;
+  width: 100px;
 }
 
 .count-guest-wrapper {
@@ -1909,7 +1926,7 @@ body {
 
 .tooltip-toggle {
   display: flex;
-  padding: 4px 9px;
+  padding: 6px 12px;
   border: none;
   background-color: #83b3d3;
   border-radius: 50%;
